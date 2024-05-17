@@ -10,6 +10,9 @@ header {
     text-align: center;
     position: relative;
     overflow: hidden;
+    min-height: 20em;
+    padding-top: 5em;
+    padding-bottom: 5em;
 }
 
 header .overlay {
@@ -35,6 +38,6 @@ header p {
     font-size: 1.2em;
 }
 
-header a {
-    margin
-}
+/* header a {
+    margin: 
+} */
