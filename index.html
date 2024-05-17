@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PJS Logistics & Cargo</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="#">PJS Logistics</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#home">Beranda</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#about">Tentang Kami</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#services">Layanan</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact">Kontak</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Header -->
+<header class="bg-primary text-white text-center" id="home" style="background-image: url('https://images.unsplash.com/photo-1529070538774-1843cb3265df'); background-size: cover; background-position: center;">
+  <div class="overlay"></div>
+  <div class="container d-flex align-items-center flex-column">
+    <h1 class="mt-5 animate__animated animate__fadeInDown">Selamat Datang di PJS Logistics & Cargo</h1>
+    <p class="lead animate__animated animate__fadeInUp">Layanan Kargo yang Handal dan Efisien</p>
+    <a href="#services" class="btn btn-outline-light btn-lg mt-4 animate__animated animate__fadeInUp">Layanan Kami</a>
+  </div>
+</header>
+
+<!-- Tentang Kami Section -->
+<section id="about" class="py-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6" data-aos="fade-right">
+        <h2>Tentang Kami</h2>
+        <p class="lead">Kami adalah perusahaan kargo terkemuka yang menyediakan solusi transportasi yang efisien dan aman. Misi kami adalah mengirimkan barang Anda dengan aman dan tepat waktu.</p>
+      </div>
+      <div class="col-lg-6" data-aos="fade-left">
+        <img src="https://images.unsplash.com/photo-1556761175-129418cb2dfe" class="img-fluid" alt="Cargo">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Layanan Section -->
+<section id="services" class="bg-light py-5">
+  <div class="container">
+    <h2 class="text-center mb-5">Layanan Kami</h2>
+    <div class="row text-center">
+      <div class="col-md-4" data-aos="zoom-in">
+        <div class="card mb-4 shadow-sm">
+          <div class="card-body">
+            <div class="mb-3">
+              <i class="fas fa-plane fa-3x text-primary"></i>
+            </div>
+            <h3 class="card-title">Pengiriman Udara</h3>
+            <p class="card-text">Layanan pengiriman udara yang cepat dan handal untuk kebutuhan pengiriman mendesak Anda.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4" data-aos="zoom-in" data-aos-delay="100">
+        <div class="card mb-4 shadow-sm">
+          <div class="card-body">
+            <div class="mb-3">
+              <i class="fas fa-ship fa-3x text-primary"></i>
+            </div>
+            <h3 class="card-title">Pengiriman Laut</h3>
+            <p class="card-text">Solusi pengiriman laut yang ekonomis untuk pengiriman besar.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4" data-aos="zoom-in" data-aos-delay="200">
+        <div class="card mb-4 shadow-sm">
+          <div class="card-body">
+            <div class="mb-3">
+              <i class="fas fa-truck fa-3x text-primary"></i>
+            </div>
+            <h3 class="card-title">Transportasi Darat</h3>
+            <p class="card-text">Layanan transportasi darat yang komprehensif untuk logistik domestik dan lintas negara.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Maps Section -->
+<section id="maps" class="py-5">
+  <div class="container">
+    <h2 class="text-center mb-5">Lokasi Kami</h2>
+    <div class="row">
+      <div class="col-lg-12">
+        <div id="map" style="height: 400px;"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Kontak Section -->
+<section id="contact" class="py-5">
+  <div class="container">
+    <h2 class="text-center mb-5">Kontak Kami</h2>
+    <div class="row">
+      <div class="col-lg-8 mx-auto">
+        <form>
+          <div class="form-group">
+            <label for="name">Nama:</label>
+            <input type="text" class="form-control" id="name" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" class="form-control" id="email" required>
+          </div>
+          <div class="form-group">
+            <label for="message">Pesan:</label>
+            <textarea class="form-control" id="message" rows="5" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-block">Kirim</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="py-4 bg-dark text-white-50">
+  <div class="container text-center">
+    <small>&copy; 2024 PJS Logistics & Cargo. Semua hak dilindungi.</small>
+  </div>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key="></script>
+<script>
+  AOS.init();
+
+  function initMap() {
+    var location = { lat: -6.200000, lng: 106.816666 };
+    var map = new google.maps.Map(document.getElementById('map'), {
+      zoom: 14,
+      center: location
+    });
+    var marker = new google.maps.Marker({
+      position: location,
+      map: map
+    });
+  }
+
+  window.onload = function() {
+    initMap();
+  };
+</script>
+</body>
+</html>
